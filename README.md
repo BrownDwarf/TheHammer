@@ -1,6 +1,9 @@
+TheHammer
+---
+
 HAMMER.PRO V1.2 README
 
-OVERVIEW
+## OVERVIEW
 
 Hammer.pro is an idl code written to replace the need for several 
 different independent spectral pipelines used primarily by the 
@@ -15,7 +18,7 @@ been automatically analyzed in this manner, the user is allowed to
 interactively tweak the assigned spectral type before a final summary file
 is created.  
 
-FORMATS
+## FORMATS
 
 The Hammer reads in spectra in a variety of formats, namely as sdss fits 
 files ('sdssfits'), a standard fits spectra ('fits'), or text files 
@@ -31,7 +34,7 @@ be in the standard sdss wavelength format (vacuum wavelengths &
 logarithmic pixels), while non-sdss spectra should be calibrated in air
 wavelengths.
 
-USE
+## USE
 
 Before being run the first time, the user add the hammerv1_1 directory to 
 their idl path, and then must edit line 19 of hammer.pro to indicate the 
@@ -112,7 +115,7 @@ the list.  Returning to Hammer.pro will allow the user to continue visually
 typing spectra from the same location in the list, though automatic 
 determination of spectral types won't be circumvented. 
 
-OUTPUTS
+## OUTPUTS
 
 autoSpTresults.tbl -- results from the automatic determination of spectral 
 type via 30 spectral indices.  Columns are: the filename, the spectral format,
@@ -130,7 +133,7 @@ text file.  See column headings for more info.
 rejectedspectra.tbl -- a file indicating spectra whose S/N were too low to 
 be considered by Hammer.pro.  
 
-TEST FILES
+## TEST FILES
 
 Included in this distribution are a set of test spectra and a sample list
 to serve as examples for users.  'testsoe.lis' is a list of input spectra
@@ -145,7 +148,7 @@ IDL> hammer, 'testsoe.lis'
 
 Good luck!
 
-AUTHORS
+## AUTHORS
 
 Hammer.pro uses a spectral typing engine created by Kevin R. Covey using
 a set of indices determined to track well with spectral type from
@@ -163,7 +166,7 @@ types, as well as adding new functionality (the ODD, SMOOTH, and BACK buttons,
 etc.)  The creation of all the routines above were performed with the steady
 supervision of Suzanne Hawley and the UW astronomy Dept.
 
-CHANGES
+## CHANGES
 
 1/4/07  -- Changed cursor command option to /down instead of 3 to allow
 	  eyecheck.pro to work correctly on macs.
@@ -199,4 +202,5 @@ CHANGES
            measured from spectra that were not double 'vactoair'ed.
 
         -- added ability to specify partial paths in list of spectra
- 
+
+11/7/14 -- Forked by gully
