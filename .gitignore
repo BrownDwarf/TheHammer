@@ -1,0 +1,5 @@
+*.tbl
+.project
+testspecs/
+*.lis
+*.idl
